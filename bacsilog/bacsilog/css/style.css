@@ -1,0 +1,579 @@
+html, body, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+div.container-top {
+  display: block;
+  background-color: #c8030a;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+div.container-top img {
+  width: 100px;
+  border-radius: 50%;
+  vertical-align: middle;
+  position: absolute;
+  top: 25px;
+  left: 100px;
+}
+
+div.container-top h1 {
+  font-size: 48px;
+  line-height: 10px;
+  letter-spacing: 0;
+  font-family: "Manrope";
+  font-weight: bold;
+  color: #fff;
+}
+
+div.container-top h2 {
+  font-size: 18px;
+  line-height: auto;
+  letter-spacing: 0;
+  font-family: "Manrope";
+  font-weight: normal;
+  color: #fff;
+}
+
+div.container-top .text-container {
+  padding-top: 55px;
+  padding-left: 230px;
+}
+
+div.container-top .left {
+  position: absolute;
+  right: 100px;
+  top: 15px;
+}
+
+div.container-top .left h3 {
+  font-size: 18px;
+  line-height: auto;
+  letter-spacing: 0;
+  font-family: "Manrope";
+  font-weight: normal;
+  color: #fff;
+}
+
+div.holder {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  top: 80%;
+  right: 70px;
+  margin-right: -100px;
+  height: 100px;
+  width: 80px;
+  border-radius: 20%;
+  background-color: #de2027;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+div.holder .menuIcon {
+  margin-top: 55px;
+  margin-left: -15px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+div.holder .menuIcon .rectangle {
+  background-color: Black;
+  opacity: .5;
+  height: 5px;
+  width: 50px;
+  margin: 5px;
+}
+
+div.holder:hover {
+  -webkit-transform: translate(-5px, 0) !important;
+          transform: translate(-5px, 0) !important;
+}
+
+div.menu-container {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background-color: #de2027;
+  z-index: 2;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+div.menu-container .closeIcon p {
+  font-size: 36px;
+  line-height: auto;
+  letter-spacing: 0;
+  font-family: "Manrope";
+  font-weight: 1000;
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  opacity: .5;
+}
+
+div.menu-container .closeIcon p:hover {
+  opacity: .7;
+}
+
+div.menu-container .title {
+  width: 100%;
+  padding-top: 50px;
+}
+
+div.menu-container .title h1 {
+  font-size: 62px;
+  line-height: auto;
+  letter-spacing: 5px;
+  font-family: "Manrope";
+  font-weight: 1000;
+  color: #000;
+  text-transform: uppercase;
+  color: #de2027;
+  font-weight: bold;
+  -webkit-text-fill-color: #de2027;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  text-align: center;
+}
+
+div.menu-container .menu-container {
+  position: relative;
+  padding: 70px 300px 70px 300px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.menu-container .menu-container .amenus {
+  position: relative;
+}
+
+div.menu-container .menu-container .amenus .amenu {
+  margin: 10px;
+  position: relative;
+  width: 170px;
+  height: 170px;
+}
+
+div.menu-container .menu-container .amenus .amenu .menu-name {
+  font-size: 18px;
+  line-height: auto;
+  letter-spacing: 1px;
+  font-family: "Manrope";
+  font-weight: 1000;
+  color: #000;
+  color: #fff;
+  background-color: #0b0e17;
+  text-transform: uppercase;
+  padding: 2px;
+  position: absolute;
+  width: 130px;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  text-align: center;
+}
+
+div.menu-container .menu-container .amenus .amenu .menu-name p {
+  margin-top: 10px;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+div.menu-container .menu-container .amenus .amenu .menu-code {
+  font-size: 52px;
+  line-height: auto;
+  letter-spacing: 5px;
+  font-family: "Manrope";
+  font-weight: 1000;
+  color: #000;
+  color: #de2027;
+  background-color: #fff;
+  border-radius: 100%;
+  text-transform: uppercase;
+  width: 170px;
+  height: 170px;
+  text-align: center;
+  padding-top: 45px;
+}
+
+div.menu-container .menu-container .amenus .amenu .menu-price {
+  position: absolute;
+  font-size: 24px;
+  line-height: auto;
+  letter-spacing: auto;
+  font-family: "Manrope";
+  font-weight: 1000;
+  color: #000;
+  background-color: #e3540c;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100px;
+  text-align: center;
+  padding-top: 8px;
+  -webkit-transform: translate(30px, -60px);
+          transform: translate(30px, -60px);
+}
+
+div.container-body {
+  display: block;
+  background-color: #c2030a;
+  min-height: 80vh;
+  height: auto;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+div.container-body .row {
+  width: 100%;
+  margin: auto;
+  padding: 0 100px 0 100px;
+}
+
+div.container-body .col-md-6 {
+  padding: 50px;
+}
+
+div.container-body .show-detail {
+  background-color: #fff;
+  min-width: 300px;
+  margin: auto;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+div.container-body .show-detail .tp, div.container-body .show-detail .button-done-container {
+  height: 100px;
+  width: 33.33333%;
+  margin: 15px 0 15px 0;
+}
+
+div.container-body .show-detail .qty {
+  height: 100%;
+  padding-top: 35px;
+  width: 33.33333%;
+  background-color: #e3540c;
+  text-align: center;
+}
+
+div.container-body .show-detail .qty h2 {
+  font-size: 48px;
+  line-height: 0px;
+  letter-spacing: 0;
+  font-family: "Manrope";
+  font-weight: bold;
+  color: #fff;
+}
+
+div.container-body .show-detail .qty h3 {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 5px;
+  font-family: "Manrope";
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+div.container-body .show-detail .tp {
+  padding-top: 20px;
+  text-align: center;
+}
+
+div.container-body .show-detail .tp h2 {
+  font-size: 48px;
+  line-height: 0px;
+  letter-spacing: 0;
+  font-family: "Manrope";
+  font-weight: bold;
+  color: #c8030a;
+}
+
+div.container-body .show-detail .tp h3 {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 5px;
+  font-family: "Manrope";
+  font-weight: 1000;
+  color: #c8030a;
+  text-transform: uppercase;
+}
+
+div.container-body .show-detail .button-done {
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  background-color: #e3540c;
+  margin: auto;
+  cursor: pointer;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  padding: 15px;
+  border: 5px solid #e3540c;
+}
+
+div.container-body .show-detail .button-done:hover {
+  background-color: transparent;
+  border: 5px solid #c8030a;
+}
+
+div.container-body .user-input {
+  margin-top: 30px;
+  padding: 0 15px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.container-body .user-input button {
+  background-color: #fff;
+  color: #c8030a;
+  font-size: 16;
+  font-family: "Manrope";
+  font-weight: bold;
+  margin: auto 10px auto 10px;
+}
+
+div.container-body .user-input button:hover {
+  opacity: .8;
+}
+
+div.container-body .user-input input:first-child {
+  margin: 10px;
+}
+
+div.container-body .user-input input:nth-child(2) {
+  margin: 10px;
+}
+
+div.container-body .user-input input::-webkit-input-placeholder {
+  color: #c8030a;
+  opacity: .2;
+}
+
+div.container-body .user-input input:-ms-input-placeholder {
+  color: #c8030a;
+  opacity: .2;
+}
+
+div.container-body .user-input input::-ms-input-placeholder {
+  color: #c8030a;
+  opacity: .2;
+}
+
+div.container-body .user-input input::placeholder {
+  color: #c8030a;
+  opacity: .2;
+}
+
+div.container-body .order-detail {
+  margin: 0 30px 0 30px;
+  min-width: 300px;
+}
+
+div.container-body .order-detail .order-number h2 {
+  margin: 15px 0px 0 0px;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: 20px;
+  font-family: "Manrope";
+  font-weight: 1000;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+div.container-body .order-detail .cOrder-table {
+  margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 17x;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-family: "Manrope";
+  font-weight: normal;
+  color: #fff;
+}
+
+div.container-body .order-detail .cOrder-table td, div.container-body .order-detail .cOrder-table th {
+  padding: 2.5px 18px 2.5px 18px;
+}
+
+div.container-body .order-detail .cOrder-table td:last-child {
+  text-align: right;
+}
+
+div.container-body .order-detail .cOrder-table button {
+  background-color: #e3540c;
+  border-radius: 0;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+div.container-body .order-detail .cOrder-table button:hover {
+  opacity: .8;
+}
+
+div.container-body .order-detail .cOrder-table p {
+  margin: 10px;
+}
+
+div.container-body .order-detail .cOrder-table tr {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+div.container-body .order-detail .cOrder-table tr:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.container-body .order-log {
+  min-width: 300px;
+  -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+div.container-body .order-log .order-title h2 {
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: 20px;
+  font-family: "Manrope";
+  font-weight: 1000;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #e3540c;
+  padding: 10px 0 10px 0;
+  margin-bottom: 30px;
+}
+
+div.container-body .order-log .order-bottom {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  background-color: #e3540c;
+  margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.container-body .order-log .order-bottom .totalDetail-holder {
+  position: absolute;
+  right: 30px;
+  margin: 0;
+  padding-top: 15px;
+}
+
+div.container-body .order-log .order-bottom .totalDetail-holder p {
+  font-size: 18px;
+  line-height: auto;
+  letter-spacing: auto;
+  font-family: "Manrope";
+  font-weight: 1000;
+  color: #fff;
+  display: inline;
+  margin-left: 50px;
+}
+
+div.container-body .order-log .order-bottom h2 {
+  font-size: 18px;
+  line-height: auto;
+  letter-spacing: 5px;
+  font-family: "Manrope";
+  font-weight: 1000;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 15px;
+  position: absolute;
+  left: 30px;
+}
+
+div.container-body .order-log .order-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+div.container-body .order-log .order-table td {
+  padding: 2.5px 18px 2.5px 18px;
+}
+
+div.container-body .order-log .order-table p {
+  font-size: 18px;
+  line-height: 0;
+  letter-spacing: auto;
+  font-family: "Manrope";
+  font-weight: 400;
+  color: #fff;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+
+div.container-body .order-log .order-table p span {
+  text-transform: uppercase;
+  font-size: 80%;
+}
+
+div.container-body .order-log .order-table tr {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+div.container-body .order-log .order-table tr:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.container-footer {
+  display: block;
+  background-color: #0b0e17;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+div.container-footer p {
+  font-size: 14px;
+  line-height: auto;
+  letter-spacing: auto;
+  font-family: "Manrope";
+  font-weight: normal;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  padding-top: 10px;
+  opacity: .5;
+}
+/*# sourceMappingURL=style.css.map */

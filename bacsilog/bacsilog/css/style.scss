@@ -1,0 +1,385 @@
+@import "variables";
+@import "responsive";
+
+div.container-top{
+    display: block;
+    background-color: $primaryColor; 
+    @include setContainer(relative, 100%, 150px);
+    img{
+        width: 100px;
+        border-radius: 50%;
+        vertical-align: middle;
+        position: absolute ;
+        top: 25px;
+        left:100px;
+    }
+    h1{
+        @include font(48px, 10px, 0, $font, bold, $offColor);
+    
+    }
+    h2{
+        @include font(18px, auto, 0, $font, normal, $offColor);
+    }
+    .text-container {
+        padding-top: 55px;
+        padding-left: 230px;
+    }
+    .left{
+        position: absolute;
+        right:100px;
+        top:15px;
+        h3{
+            @include font(18px, auto, 0, $font, normal, $offColor);
+        }
+    }
+}
+
+div.holder{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    top:80%;
+    right: 70px;
+    margin-right: -100px;
+    height: 100px;
+    width: 80px;
+    border-radius: 20%;
+    background-color: $primaryColor3;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+    .menuIcon{
+        margin-top:55px;
+        margin-left:-15px;
+        transform: rotate(90deg);
+        .rectangle{
+            background-color: Black;
+            opacity:.5;
+            height: 5px;
+            width: 50px;
+            margin:5px;
+        }
+    }
+    &:hover{
+        transform: translate(-5px,0) !important;
+    }
+}
+div.menu-container{
+    display: block;
+    @include setFixedpage;
+    background-color: $primaryColor3;
+    z-index: 2;
+    transition: all .2s ease-in-out;
+    .closeIcon{
+        p{
+            @include font(36px, auto, 0, $font, 1000, #000);
+            cursor: pointer;
+            position: absolute;
+            top: 25px;
+            right: 100px;
+            transition: all .2s ease-in-out;
+            opacity:.5;
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+    
+    .title{
+        width: 100%;
+        padding-top: 50px;
+        h1{
+            @include font(62px, auto, 5px, $font, 1000, #000);
+            text-transform: uppercase;
+            @include stroke($primaryColor3, bold, $primaryColor3, 1px, $offColor);
+            text-align: center;
+        }
+    }
+    .menu-container{
+        position: relative;
+        padding: 70px 300px 70px 300px;
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        .amenus{
+            position: relative;
+            .amenu{
+                margin: 10px;
+                position: relative;
+                width: 170px;
+                height: 170px;
+                
+                .menu-name{
+                    @include font(18px, auto, 1px, $font, 1000, #000);
+                    color: $offColor;
+                    background-color: $secondaryColor2;
+                    text-transform: uppercase;
+                    padding: 2px;
+                    position: absolute;
+                    width: 130px;
+                    transform: rotate(-5deg);
+                    text-align: center;
+                    p{  margin-top:10px;
+                        transform: rotate(5deg);
+                    }
+
+                }
+                .menu-code{
+                    @include font(52px, auto, 5px, $font, 1000, #000);
+                    color: $primaryColor3;
+                    background-color: $offColor;
+                    border-radius: 100%;
+                    text-transform: uppercase;
+                    width: 170px;
+                    height: 170px;
+                    text-align: center;
+                    padding-top: 45px;
+                }
+                .menu-price{
+                    position: absolute;
+                    @include font(24px, auto, auto, $font, 1000, #000);
+                    background-color: $secondaryColor;
+                    color: $offColor;
+                    text-transform: uppercase;
+                    width: 100px;
+                    text-align: center;
+                    padding-top: 8px;
+                    transform: translate(30px,-60px)
+
+                }
+            }
+        }
+    }
+
+}
+
+div.container-body{
+    display: block;
+    background-color: $primaryColor2; 
+    min-height:80vh;
+    @include setContainer(relative, 100%, auto);
+    .row{
+        width: 100%;
+        margin:auto;
+        padding:0 100px 0 100px;
+    }
+    .col-md-6{
+        padding: 50px;
+    }
+    .show-detail{
+        background-color: $offColor;
+        min-width:300px;
+        margin: auto;
+        height: 130px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        .tp ,.button-done-container{
+            height: 100px;
+            width: (100%/3);
+            margin: 15px 0 15px 0;
+        }
+        .qty{   
+            height: 100%;
+            padding-top: 35px;
+            width: (100%/3);
+            background-color: $secondaryColor;
+            text-align: center;
+            h2{
+                @include font(48px, 0px, 0, $font, bold, $offColor);
+            }
+            h3{
+                @include font(18px, 30px, 5px, $font, 500, $offColor);
+                text-transform: uppercase;
+            }
+        }
+        .tp{
+            padding-top: 20px;
+            text-align: center;
+            h2{
+                @include font(48px, 0px, 0, $font, bold, $primaryColor);
+               
+            }
+            h3{
+                @include font(18px, 30px, 5px, $font, 1000, $primaryColor);
+                text-transform: uppercase;
+            }
+        }
+        .button-done{
+            width: 100px;
+            height: 100px;
+            border-radius: 20%;
+            background-color: $secondaryColor;
+            margin: auto;
+            cursor: pointer;
+            transition: all 1s ease-in-out;
+            padding: 15px;
+            border: 5px solid $secondaryColor;
+            
+            &:hover{
+                background-color: transparent;
+                border: 5px solid $primaryColor;
+            }
+        }
+
+
+        
+        
+    }
+    .user-input{
+        margin-top: 30px;
+        padding: 0 15px 0 15px;
+        display: flex;
+        button{
+            background-color: $offColor;
+            color: $primaryColor;
+            font-size: 16;
+            font-family: $font;
+            font-weight: bold;
+            margin: auto 10px auto 10px ;
+            &:hover{
+               opacity: .8;
+               
+            }
+        }
+        input:first-child{
+            margin: 10px;
+        }
+        
+        input:nth-child(2){
+            margin: 10px;
+        }
+        input::placeholder{
+            color: $primaryColor; 
+            opacity: .2;
+        }
+    }
+    .order-detail{
+        margin: 0 30px 0 30px;
+        min-width: 300px;
+          
+        .order-number h2{
+            margin: 15px 0px 0 0px;
+            @include font(18px, 40px, 20px, $font, 1000, $offColor);
+            text-transform: uppercase;
+            padding-bottom: 15px;
+            border-bottom: 5px solid  rgba(0, 0, 0, .5);  
+        }
+        .cOrder-table{
+            margin-top: 10px;
+            width: 100%;
+            border-collapse: collapse;
+            @include font(17x, 20px, 0, $font, normal, $offColor);
+        
+            td,th{
+            padding: 2.5px 18px 2.5px 18px;
+            }
+            td:last-child{
+                text-align: right;
+                
+            }
+            button{
+                background-color: $secondaryColor;
+                border-radius: 0;
+                
+                transition: all .2s ease-in-out;
+                &:hover{
+                    opacity: .8;
+                }
+            }
+            p{
+                margin: 10px;
+            }
+            tr{
+                transition: all .2s ease-in-out;
+                &:hover{
+                    background-color:  rgba(0, 0, 0, .5);
+            
+                }
+                
+            }
+        }
+    }
+    .order-log{
+        min-width: 300px;
+        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+        .order-title h2{
+            @include font(18px, 40px, 20px, $font, 1000, $offColor);
+            text-transform: uppercase;
+            text-align: center;
+            background-color: $secondaryColor;
+            padding: 10px 0 10px 0;
+            margin-bottom: 30px;
+        }
+        .order-bottom{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            bottom: 0;
+            background-color: $secondaryColor;
+            
+            margin-top: 30px;
+            flex-wrap: wrap;
+            .totalDetail-holder{
+                position: absolute;
+                right: 30px;
+                margin: 0;
+                padding-top: 15px;
+                p{
+                @include font(18px, auto, auto, $font, 1000, $offColor);
+                display: inline;
+                margin-left: 50px;
+                }   
+
+            }
+            h2{
+                @include font(18px, auto, 5px, $font, 1000, $offColor);
+                text-transform: uppercase;
+                margin: 0;
+                padding-top: 15px;
+                position: absolute;
+                left: 30px;
+            }
+        }
+        .order-table{
+            width: 100%;
+            border-collapse: collapse;
+            td{
+            padding: 2.5px 18px 2.5px 18px;
+            }
+            p{
+                @include font(18px, 0, auto, $font, 400, $offColor);
+                padding: 20px 0 10px 0;
+                text-align: center;
+                span{
+                    text-transform: uppercase;
+                    font-size: 80%;
+                }
+            }
+            tr{
+                transition: all .2s ease-in-out;
+                &:hover{
+                    background-color:  rgba(0, 0, 0, .5);
+            
+                }
+                
+            }
+        }
+         
+    }
+
+}
+div.container-footer{
+    display: block;
+    background-color: $secondaryColor2;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    p{
+        @include font(14px, auto, auto, $font, normal, $offColor);
+        position: relative;
+        text-align: center;
+        padding-top: 10px;
+        opacity: .5;
+    }
+}

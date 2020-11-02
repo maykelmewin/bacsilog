@@ -1,0 +1,57 @@
+$primaryColor :  #c8030a;
+$secondaryColor :  #e3540c;
+$primaryColor2 :  #c2030a;
+$primaryColor3 :  #de2027;
+$secondaryColor2: #0b0e17;
+
+$offColor : #fff;
+
+$font : "Manrope";
+
+@mixin font($size, $ls, $ts, $name, $weight, $color) {
+    font-size: $size;
+    line-height: $ls;
+    letter-spacing: $ts;
+    font-family: $name;
+    font-weight: $weight;
+    color: $color;
+}
+
+//set container
+@mixin setContainer($x1,$x2,$x3){
+    height:$x3;
+    width: $x2;
+    position: $x1;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+}
+
+//for stroking outside fonts
+@mixin stroke($fontcolor, $fw, $fill, $strokewidth, $strokecolor){
+    color: $fontcolor;
+    font-weight: $fw;
+    -webkit-text-fill-color: $fill;
+    -webkit-text-stroke-width: $strokewidth;
+    -webkit-text-stroke-color: $strokecolor;
+}
+
+// whole page fixed
+@mixin setFixedpage{
+    height:100%;
+    width: 100%;
+    position: fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+}
+
+// default
+html, body, h1{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
